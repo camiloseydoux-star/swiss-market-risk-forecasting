@@ -73,7 +73,7 @@ file exists specifically so nobody mistakes "the memo didn't mention it" for
 | `03_skewt_ml_challenger.ipynb` / `.html` | Milestone 3: skew-t refinement, paired-comparison verification, LightGBM challenger evaluation |
 | `milestone1_memo.pdf`, `milestone2_memo.pdf`, `milestone3_memo.pdf` | One-page, recommendation-first memos for each milestone |
 | `standing_open_threads.pdf` | What's still provisional — see Section 4 above |
-| `swiss_market_data.zip`, `_part2.zip`, `_part3.zip` | Raw daily price data pulled via `yfinance` (SSMI, UBSG, NESN, NOVN, ROP, RO, ZURN, VIX, USDCHF, EURCHF), unmodified from source |
+| Raw datasets | Not in this folder — see [Releases → v1.0-data](../../releases/tag/v1.0-data): `yfinance` pulls for SSMI, UBSG, NESN, NOVN, ROP, RO, ZURN, VIX, USDCHF, EURCHF, unmodified from source |
 
 `.html` files are self-contained (charts embedded, not linked) — open with a
 double-click, no Python required. `.ipynb` files render on GitHub directly,
@@ -94,9 +94,10 @@ this repo. This does not affect the validity of any finding — it only affects
 literal from-scratch re-computation. Regenerating them is a scoped, known task
 (not a mystery gap) and is tracked as follow-up work.
 
-To work with the raw data directly: unzip the three `swiss_market_data*.zip`
-files into `data/raw/` and see `01_eda_regime_correlation.ipynb` for the
-loading/cleaning pipeline.
+To work with the raw data directly: download the three `swiss_market_data*.zip`
+files from [Releases → v1.0-data](../../releases/tag/v1.0-data), unzip into
+`data/raw/`, and see `01_eda_regime_correlation.ipynb` for the loading/
+cleaning pipeline.
 
 ## 7. Methodology notes worth knowing before reading the notebooks
 
